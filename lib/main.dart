@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:oem_app/oem/oem_main_view.dart';
 
+import 'base_view.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -106,6 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const StatelessWidgetSample(),
             const Text(
               'You have pushed the button this many times:',
             ),
