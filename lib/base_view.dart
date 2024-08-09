@@ -2,10 +2,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class StatelessWidgetSample extends StatelessWidget {
-  const StatelessWidgetSample({super.key,});
+  const StatelessWidgetSample({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return const Text("Base View Text");
+    return const Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text("Base View Text 1"),
+        Text("Base View Text 2"),
+      ],
+    );
   }
 }
